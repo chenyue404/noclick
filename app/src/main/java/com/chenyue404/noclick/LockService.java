@@ -22,6 +22,7 @@ public class LockService extends Service {
 
 
         lockIntent = new Intent(LockService.this, MainActivity.class);
+        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //        lockIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         /*注册广播*/
